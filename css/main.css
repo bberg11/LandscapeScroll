@@ -114,6 +114,7 @@ a:hover {
 }
 img {
     display: block;
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
@@ -204,6 +205,93 @@ img {
         text-align: center;
     }
 
+/* ==========================================================================
+   Small Screen
+   ========================================================================== */
+@media screen and (min-width: 600px) {
+    .header .utility {
+        padding: 5px 0;
+        width: 60%;
+        float: left;
+        font-size: 0.750em;
+    }
+        .header .utility ul li {
+            padding: 0 4px;
+            font-size: 1em;
+        }
+    .header .cart {
+        padding: 5px 0;
+        width: 40%;
+        float: right;
+        font-size: 0.750em;
+        font-variant: normal;
+        text-align: right;
+        border-bottom: 1px solid #333;
+    }
+    .header .menu {
+        display: none;
+    }
+    .header .navigation {
+        width: 60%;
+        float: left;
+    }
+        .header .primary-nav {
+            display: block;
+            text-align: center;
+        }
+            .header .primary-nav li {
+                display: inline-block;
+                padding: 0 10px 0 0;
+            }
+    .header .search {
+        margin: 0;
+        width: 40%;
+        float: right;
+        text-align: right;
+    }
+
+    .footer .section {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/* ==========================================================================
+   Mid-Sized
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+    .header .utility ul {
+        text-align: left;
+    }
+    .header .primary-nav {
+        text-align: left;
+    }
+
+    .content .main-content {
+        width: 66.66%;
+        float: right;
+    }
+        .content .main-content .breadcrumbs {
+            margin-left: 3%;
+            height: 40px;
+        }
+    .content .sidebar {
+        margin-top: 40px;
+        width: 33.33%;
+        float: left;
+    }
+}
+
+/* ==========================================================================
+   Full-Width
+   ========================================================================== */
+@media screen and (min-width: 975px) {
+
+}
+
+/* ==========================================================================
+   Mobile Landscape Scroll Styling
+   ========================================================================== */
  @media screen and (max-width: 480px) and (orientation: landscape) {
     .header,
     .footer,
