@@ -119,6 +119,13 @@ img {
     height: auto;
 }
 
+.responsive-tool {
+    display: none;
+}
+iframe .responsive-tool {
+    display: none !important;
+}
+
 /*Layout Styles*/
 .header {}
     .header .utility {
@@ -209,6 +216,29 @@ img {
    Small Screen
    ========================================================================== */
 @media screen and (min-width: 600px) {
+    .js .responsive-tool {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 5px;
+        margin-top: -45px;
+        width: 72px;
+        height: 90px;
+        background: #282828 url(../img/responsive-tool.png) center center no-repeat;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -moz-opacity: 0.70;
+        opacity: 0.70;
+    }
+        .responsive-tool a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: -150px;
+            white-space: nowrap;
+        }
+
     .header .utility {
         padding: 5px 0;
         width: 60%;
@@ -310,7 +340,8 @@ img {
  @media screen and (max-width: 480px) and (orientation: landscape) {
     .header,
     .footer,
-    .sidebar {
+    .sidebar,
+    .responsive-tool {
         display: none;
     }
     .content .main-content .products {
