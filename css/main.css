@@ -272,13 +272,15 @@ img {
         float: right;
     }
         .content .main-content .breadcrumbs {
-            margin-left: 3%;
+            margin-left: 5%;
             height: 40px;
         }
     .content .sidebar {
-        margin-top: 40px;
+        margin-top: 20px;
+        padding: 0;
         width: 33.33%;
         float: left;
+        border: none;
     }
 }
 
@@ -286,7 +288,20 @@ img {
    Full-Width
    ========================================================================== */
 @media screen and (min-width: 975px) {
+    body {
+        margin: 0 auto;
+        max-width: 955px;
+    }
 
+    .content .main-content {
+        width: 80%;
+    }
+        .content .main-content .products .product {
+            width: 31%;
+        }
+    .content .sidebar {
+        width: 20%;
+    }
 }
 
 /* ==========================================================================
