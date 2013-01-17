@@ -132,6 +132,7 @@ img {
                 font-size: 0.750em;
             }
     .header .cart {
+        margin-top: 5px;
         text-align: center;
         font-variant: small-caps;
     }
@@ -206,8 +207,7 @@ img {
 
  @media screen and (max-width: 480px) and (orientation: landscape) {
     .header,
-    .footer,
-    .sidebar {
+    .footer {
         display: none;
     }
     .content .main-content .products {
