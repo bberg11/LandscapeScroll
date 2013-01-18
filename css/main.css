@@ -122,8 +122,9 @@ img {
 .responsive-tool {
     display: none;
 }
-iframe .responsive-tool {
-    display: none !important;
+
+#opt-out {
+    display: none;
 }
 
 /*Layout Styles*/
@@ -337,7 +338,7 @@ iframe .responsive-tool {
 /* ==========================================================================
    Mobile Landscape Scroll Styling
    ========================================================================== */
- @media screen and (max-width: 480px) and (orientation: landscape) {
+ @media screen and (max-width: 800px) and (orientation: landscape) {
     .header,
     .footer,
     .sidebar,
@@ -364,6 +365,43 @@ iframe .responsive-tool {
         }
         .content .main-content .products .product .info {
             height: 60px;
+        }
+
+    #opt-out {
+        display: block;
+        position: fixed;
+        bottom: 5px;
+        left: 5px;
+        z-index: 1;
+    }
+    #opt-out.hide {
+        display: none;
+    }
+
+/* Remove Mobile Landscape Scroll Styling after "opt out" */
+    .opt-out .header,
+    .opt-out .footer,
+    .opt-out .sidebar,
+    .opt-out .responsive-tool {
+        display: block;
+    }
+    .opt-out .content .main-content .products {
+        position: static;
+        background: none;
+        white-space: normal;
+    }
+    .opt-out .content .main-content .products .product {
+        display: block;
+        margin: 0 1%;
+        width: 48%;
+        float: left;
+    }
+        .opt-out .content .main-content .products .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .opt-out .content .main-content .products .product .info {
+            height: auto;
         }
 }
 
